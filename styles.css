@@ -127,16 +127,17 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .section-grid,
     .works-grid {
         grid-template-columns: 1fr;
     }
-
     nav {
         padding: 1rem;
     }
-
     main {
         padding: 0 1rem;
     }
+}
+
+.card {
+    max-width: 32rem;  /* or whatever width you prefer */
 }
