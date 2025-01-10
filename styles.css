@@ -57,17 +57,13 @@ section {
 }
 
 /* Grid Layouts */
-.section-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
-}
 
 .works-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    max-width: 64rem;
+    margin: 0 auto;
 }
 
 /* Typography */
@@ -96,6 +92,9 @@ h3 {
     padding: 1.5rem;
     border-radius: 4px;
     border: 1px solid rgba(0,102,204,0.2);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32rem;
 }
 
 .card:hover {
