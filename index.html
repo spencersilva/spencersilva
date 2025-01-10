@@ -3,44 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spencer Silva - Portfolio</title>
-    
-    <!-- Google Fonts -->
+    <title>Spencer Silva | Writer & Editor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Adobe Fonts for Recta -->
-    <link rel="stylesheet" href="https://use.typekit.net/[your-kit-code].css">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              recta: ['recta', 'serif'],
-              mono: ['Space Mono', 'monospace'],
-            },
-          },
-        },
-      }
-    </script>
-    
-    <!-- React -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    
-    <style>
-      body {
-        background-color: rgb(3, 7, 18);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel" src="js/main.js"></script>
+    <nav>
+        <div class="nav-container">
+            <a href="#about">ABOUT</a>
+            <a href="#selected-works">SELECTED WORKS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-grid">
+                <div class="content">
+                    <h1>Spencer Silva</h1>
+                    <div class="card">
+                        <p>Experienced journalist and editor with a decade of experience covering technology, 
+                        democracy, sports, and policy. Former assistant editor at Media Matters, 
+                        with work featured in SF Chronicle, East Bay Express, and more. 
+                        Graduate of UC Berkeley School of Journalism.</p>
+                    </div>
+                </div>
+                <div class="image-placeholder"></div>
+            </div>
+        </section>
+
+        <!-- Selected Works Section -->
+        <section id="selected-works">
+            <h2>SELECTED WORKS</h2>
+            <div class="works-grid">
+                <div class="card">
+                    <h3>Election Misinformation on YouTube</h3>
+                    <p class="meta">Media Matters</p>
+                    <p>Investigation into the spread of election misinformation ahead of the midterms</p>
+                    <span class="tag">Tech & Democracy</span>
+                </div>
+
+                <div class="card">
+                    <h3>Gun Commerce on Meta Platforms</h3>
+                    <p class="meta">Media Matters</p>
+                    <p>Series revealing how Facebook and Instagram enabled firearm sales despite policies</p>
+                    <span class="tag">Platform Accountability</span>
+                </div>
+
+                <div class="card">
+                    <h3>LaneyBuilt: A Season of Glory and Loss</h3>
+                    <p class="meta">East Bay Express</p>
+                    <p>Feature honored in Best American Sportswriting anthology about Oakland JC football</p>
+                    <span class="tag">Sports</span>
+                </div>
+
+                <div class="card">
+                    <h3>Cannabis Policy in California</h3>
+                    <p class="meta">San Francisco Chronicle</p>
+                    <p>SPJ-nominated coverage of local government responses to legalization</p>
+                    <span class="tag">Policy</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <div class="card contact-card">
+                <p>wordsmithsilva@gmail.com</p>
+                <p>Bay Area, California</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
