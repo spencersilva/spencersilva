@@ -53,8 +53,7 @@ main {
 }
 
 section {
-    min-height: 100vh;
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 /* Grid Layouts */
