@@ -55,23 +55,41 @@ main {
 /* About Section */
 .about-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
     align-items: start;
-    margin: 2rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .sketch-container {
-    width: 300px;
+    width: 100%;
+    max-width: 350px;
     justify-self: center;
+    margin-top: 2rem;
 }
 
 .profile-sketch {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
-    opacity: 0.95;
+    border-radius: 12px;
+    opacity: 0.98;
+    filter: brightness(1.05);
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .sketch-container {
+        max-width: 250px;
+        margin: 0 auto;
+    }
 }
 
 section {
