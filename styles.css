@@ -83,12 +83,31 @@ main {
 @media (max-width: 768px) {
     .about-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
+        padding: 0 1rem;
     }
     
     .sketch-container {
-        max-width: 250px;
-        margin: 0 auto;
+        max-width: 300px;
+        margin: 0 auto 2rem auto;
+        order: 2;  /* This makes the image appear after the text */
+    }
+
+    .card {
+        margin-bottom: 0;  /* Remove extra space after the text */
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section {
+        padding: 2rem 0;
     }
 }
 
