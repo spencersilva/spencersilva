@@ -54,31 +54,24 @@ main {
 
 /* About Section */
 .about-container {
-    display: flex;
-    gap: 3rem;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-}
-
-.about-text {
-    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 2rem 0;
 }
 
 .sketch-container {
-    flex: 0 0 400px;
-    margin-top: 2rem;
-    background: var(--blue-light);
-    border-radius: 50%;
-    overflow: hidden;
+    width: 300px;
+    justify-self: center;
 }
 
 .profile-sketch {
     width: 100%;
     height: auto;
     display: block;
-    mix-blend-mode: multiply;
-    opacity: 0.9;
-    filter: brightness(1.2) contrast(0.9);
+    border-radius: 8px;
+    opacity: 0.95;
 }
 
 section {
