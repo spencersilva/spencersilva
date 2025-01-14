@@ -17,6 +17,26 @@ body {
     color: var(--blue-dark);
 }
 
+/* Typography */
+h1, h2, h3 {
+    color: var(--blue-medium);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
 /* Navigation */
 nav {
     position: sticky;
@@ -52,6 +72,10 @@ main {
     padding: 0 2rem;
 }
 
+section {
+    padding: 4rem 0;
+}
+
 /* About Section */
 .about-container {
     display: grid;
@@ -62,19 +86,20 @@ main {
     margin: 0 auto;
 }
 
-.card {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 4px;
-    border: 1px solid rgba(0,102,204,0.2);
-    margin-bottom: 0;  /* Remove extra bottom margin */
+#about {
+    padding-top: 1rem;
+}
+
+#about .card p {
+    font-size: 1.2rem;
+    line-height: 1.7;
 }
 
 .sketch-container {
     width: 100%;
     max-width: 350px;
-    justify-self: start;  /* Align with the text */
-    padding-top: 0.5rem;  /* Small offset to align with text */
+    justify-self: start;
+    padding-top: 0.5rem;
 }
 
 .profile-sketch {
@@ -88,63 +113,6 @@ main {
     object-fit: cover;
 }
 
-section {
-    padding: 2rem 0;  /* Reduced padding */
-}
-
-/* Adjust spacing for the about section specifically */
-#about {
-    padding-top: 1rem;  /* Reduced top padding */
-}
-
-h1 {
-    margin-bottom: 1rem;  /* Reduced margin */
-}
-
-#about .card p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-    #about .card p {
-        font-size: 1.1rem;  /* Slightly smaller on mobile */
-    }
-}
-    .about-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        padding: 0 1rem;
-    }
-    
-    .sketch-container {
-        max-width: 300px;
-        margin: 0 auto 2rem auto;
-        order: 2;  /* This makes the image appear after the text */
-    }
-
-    .card {
-        margin-bottom: 0;  /* Remove extra space after the text */
-    }
-
-    main {
-        padding: 0 1rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    section {
-        padding: 2rem 0;
-    }
-}
-
-section {
-    padding: 4rem 0;
-}
-
 /* Grid Layouts */
 .works-grid {
     display: grid;
@@ -152,26 +120,6 @@ section {
     gap: 2rem;
     width: 100%;
     margin: 0 auto;
-}
-
-/* Typography */
-h1, h2, h3 {
-    color: var(--blue-medium);
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-    letter-spacing: -1px;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.25rem;
 }
 
 /* Cards */
@@ -182,6 +130,7 @@ h3 {
     border: 1px solid rgba(0,102,204,0.2);
     height: 100%;
     transition: border-color 0.2s ease;
+    margin-bottom: 0;
 }
 
 .card:hover {
@@ -211,26 +160,40 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .works-grid {
-        grid-template-columns: 1fr;
+    main {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .nav-container {
         padding: 0 1rem;
     }
 
-    main {
-        padding: 0 1rem;
+    .works-grid {
+        grid-template-columns: 1fr;
     }
 
     .about-container {
-        flex-direction: column;
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 1rem;
     }
 
     .sketch-container {
-        flex: 0 0 auto;
         max-width: 300px;
-        margin: 0 auto;
+        margin: 0 auto 2rem auto;
+        order: 2;
+    }
+
+    #about .card p {
+        font-size: 1.1rem;
     }
 }
