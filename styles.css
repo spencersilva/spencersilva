@@ -101,7 +101,16 @@ h1 {
     margin-bottom: 1rem;  /* Reduced margin */
 }
 
+#about .card p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
 @media (max-width: 768px) {
+    #about .card p {
+        font-size: 1.1rem;  /* Slightly smaller on mobile */
+    }
+}
     .about-container {
         grid-template-columns: 1fr;
         gap: 3rem;
