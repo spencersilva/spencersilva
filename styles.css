@@ -77,26 +77,20 @@ h3 {
 }
 
 /* About Section */
-.about-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-.about-grid {
+.about-container {
     display: flex;
-    align-items: flex-start;
     gap: 4rem;
+    align-items: flex-start;
 }
 
-.bio-section {
-    flex: 1;
-}
-
-.sketch-section {
+.sketch-container {
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.card {
+    flex: 2;
 }
 
 #about .card p {
@@ -164,38 +158,41 @@ h3 {
     .nav-container {
         padding: 0 1rem;
     }
-
+    
     main {
         padding: 0 1rem;
     }
-
+    
     section {
         padding: 2rem 0;
     }
-
+    
     h1 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }
-
+    
     .works-grid {
         grid-template-columns: 1fr;
     }
-
-    .about-grid {
+    
+    .about-container {
         flex-direction: column;
         gap: 3rem;
-        padding: 0 1rem;
     }
-
-    .sketch-section {
+    
+    .sketch-container {
         order: 2;
     }
-
+    
+    .card {
+        flex: 1;
+    }
+    
     .profile-sketch {
         max-width: 300px;
     }
-
+    
     #about .card p {
         font-size: 1.1rem;
     }
