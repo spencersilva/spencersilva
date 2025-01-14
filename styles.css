@@ -57,12 +57,12 @@ section {
 }
 
 /* Grid Layouts */
-
 .works-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 64rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Typography */
@@ -91,7 +91,8 @@ h3 {
     padding: 1.5rem;
     border-radius: 4px;
     border: 1px solid rgba(0,102,204,0.2);
-    max-width: 32rem;
+    height: 100%;
+    transition: border-color 0.2s ease;
 }
 
 .card:hover {
@@ -114,7 +115,6 @@ h3 {
     margin-top: 1rem;
 }
 
-
 /* Contact section */
 .contact-card {
     max-width: 32rem;
@@ -125,14 +125,12 @@ h3 {
     .works-grid {
         grid-template-columns: 1fr;
     }
-    nav {
-        padding: 1rem;
+
+    .nav-container {
+        padding: 0 1rem;
     }
+
     main {
         padding: 0 1rem;
     }
-}
-
-.card {
-    max-width: 32rem;  /* or whatever width you prefer */
 }
